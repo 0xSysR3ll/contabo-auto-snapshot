@@ -1,0 +1,8 @@
+# config.yml
+webhook_url: "YOUR_DISCORD_WEBHOOK_URL"
+client_id: "YOUR_CLIENT_ID"
+client_secret: "YOUR_CLIENT_SECRET"
+api_user: "YOUR_API_USER" # Contabo username
+api_password: "YOUR_API_PASSWORD" # Contabo password
+cron_schedule: "0 0 * * *"  # Cron syntax for scheduling (every day at midnight)
+log_level: "INFO"

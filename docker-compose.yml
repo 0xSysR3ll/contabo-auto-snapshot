@@ -1,0 +1,14 @@
+services:
+  auto-snapshots-bot:
+    build: .
+    volumes:
+      - ./config:/app/config
+      - ./logs:/app/logs
+    environment:
+      - WEBHOOK_URL=${WEBHOOK_URL}
+      - CLIENT_ID=${CLIENT_ID}
+      - CLIENT_SECRET=${CLIENT_SECRET}
+      - API_USER=${API_USER}
+      - API_PASSWORD=${API_PASSWORD}
+      - CRON_SCHEDULE=${CRON_SCHEDULE}
+    restart: unless-stopped
