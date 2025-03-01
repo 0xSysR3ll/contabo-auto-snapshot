@@ -11,10 +11,10 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the project files
-COPY . /app
+COPY . .
 
 # Create the logs directory
-RUN mkdir -p app/{logs,config}
+RUN mkdir -p {logs,config}
 
 # Set the entry point
-ENTRYPOINT ["python", "-u", "app/main.py"]
+ENTRYPOINT ["python", "-u", "main.py"]
