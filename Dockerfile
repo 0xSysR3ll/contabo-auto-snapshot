@@ -1,7 +1,7 @@
 # Dockerfile
 FROM python:3-alpine
 
-RUN apk add --no-cache tzdata -y
+RUN apk add --no-cache tzdata
 
 # Set the working directory
 WORKDIR /app
