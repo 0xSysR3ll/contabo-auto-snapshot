@@ -17,4 +17,4 @@ COPY . /app
 RUN mkdir -p app/{logs,config}
 
 # Set the entry point
-ENTRYPOINT ["python", "-u" "app/main.py"]
+ENTRYPOINT ["python", "-u", "app/main.py"]
