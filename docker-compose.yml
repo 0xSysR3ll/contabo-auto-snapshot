@@ -11,4 +11,5 @@ services:
       - API_USER=${API_USER}
       - API_PASSWORD=${API_PASSWORD}
       - CRON_SCHEDULE=${CRON_SCHEDULE}
+      - LOG_LEVEL=${LOG_LEVEL}
     restart: unless-stopped
